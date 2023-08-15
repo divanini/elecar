@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/wheel.png">
+    <title>Elecar</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav__logo-box">
+                    <svg class="nav-wheel" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M18.1667 11.6675C17.8215 13.353 16.9636 14.8906 15.7104 16.0695C14.4572 17.2484 12.8701 18.0109 11.1667 18.2525V16.565C12.4248 16.3406 13.5921 15.7598 14.5299 14.8914C15.4676 14.0231 16.1364 12.9039 16.4567 11.6667L18.1667 11.6675ZM3.54334 11.6675C3.86018 12.8904 4.51756 13.9983 5.43908 14.8625C6.3606 15.7266 7.50843 16.3115 8.74917 16.5492V18.2408C7.06243 17.9838 5.49507 17.2158 4.25844 16.0402C3.02181 14.8647 2.1754 13.3382 1.83334 11.6667H3.54334V11.6675ZM15 9.16666V10.8333H14.1667C13.3115 10.8333 12.489 11.162 11.8693 11.7514C11.2497 12.3408 10.8803 13.1459 10.8375 14L10.8333 14.1667V15H9.16667V14.1667C9.16667 13.3115 8.83797 12.489 8.24857 11.8693C7.65916 11.2497 6.85414 10.8803 6 10.8375L5.83334 10.8333H5V9.16666H15ZM10 1.66666C14.3208 1.66666 17.8742 4.95582 18.2917 9.16666H16.615C16.4116 7.55574 15.6274 6.07438 14.4095 5.00055C13.1916 3.92672 11.6237 3.33422 10 3.33422C8.3763 3.33422 6.80839 3.92672 5.59048 5.00055C4.37257 6.07438 3.58836 7.55574 3.385 9.16666H1.7075C2.12584 4.95582 5.67917 1.66666 10 1.66666Z" fill="white"/>
+                    </svg>
+                    <div class="nav__logo-text">Elecar</div>
+                </div>
+                <svg class="menu" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                    <path d="M0.5 0.333344H15.5V2.00001H0.5V0.333344ZM0.5 6.16668H15.5V7.83334H0.5V6.16668ZM0.5 12H15.5V13.6667H0.5V12Z" fill="white"/>
+                </svg>
+                <div class="nav__links">
+                    <div class="nav__link">Home</div>
+                    <div class="nav__link">About</div>
+                    <div class="nav__link">Popular</div>
+                    <div class="nav__link">Featured</div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <svg class="big-circle" width="542" height="652" viewBox="0 0 542 652" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_122_48)">
+                <circle cx="112" cy="222" r="250" fill="#374A6D" fill-opacity="0.5"/>
+                </g>
+                <defs>
+                <filter id="filter0_f_122_48" x="-318" y="-208" width="860" height="860" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_122_48"/>
+                </filter>
+                </defs>
+            </svg>
+            <div class="main__title">Choose The Best Car</div>
+            <div class="main__car-model">Porsche Mission E</div>
+            <div class="main__electric-wrapper">
+                <svg class="main-light" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10.8333 8.33334H16.6666L9.16665 19.1667V11.6667H3.33331L10.8333 0.833344V8.33334Z" fill="#4177DC"/>
+                </svg>
+                <div class="main__electric-text">Electric car</div>
+            </div>
+            <img src="images/main-car.png" alt="" class="main__car-img">
+            <div class="main__stat">
+                <div class="main__stat-temp">
+                    <div class="temp__svg-box">
+                        <svg class="temperature" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M6.66669 4.16667C6.66669 3.28261 7.01788 2.43477 7.643 1.80965C8.26812 1.18453 9.11597 0.833336 10 0.833336C10.8841 0.833336 11.7319 1.18453 12.357 1.80965C12.9822 2.43477 13.3334 3.28261 13.3334 4.16667V8.54584C14.3525 9.25548 15.1186 10.2719 15.5201 11.4471C15.9216 12.6222 15.9376 13.8949 15.5657 15.0798C15.1938 16.2647 14.4534 17.3 13.4524 18.035C12.4514 18.77 11.2419 19.1663 10 19.1663C8.75814 19.1663 7.54866 18.77 6.54763 18.035C5.54661 17.3 4.80627 16.2647 4.43438 15.0798C4.06249 13.8949 4.07846 12.6222 4.47996 11.4471C4.88146 10.2719 5.64753 9.25548 6.66669 8.54584V4.16667ZM7.62002 9.9125C6.89183 10.4192 6.34439 11.1452 6.0574 11.9846C5.77041 12.8241 5.75884 13.7332 6.02439 14.5797C6.28994 15.4262 6.81873 16.1658 7.5338 16.6909C8.24886 17.2161 9.11286 17.4992 10 17.4992C10.8872 17.4992 11.7512 17.2161 12.4662 16.6909C13.1813 16.1658 13.7101 15.4262 13.9757 14.5797C14.2412 13.7332 14.2296 12.8241 13.9426 11.9846C13.6557 11.1452 13.1082 10.4192 12.38 9.9125L11.6667 9.415V4.16667C11.6667 3.72464 11.4911 3.30072 11.1785 2.98816C10.866 2.6756 10.442 2.5 10 2.5C9.55799 2.5 9.13407 2.6756 8.82151 2.98816C8.50895 3.30072 8.33335 3.72464 8.33335 4.16667V9.415L7.62002 9.9125ZM6.66669 13.3333H13.3334C13.3334 14.2174 12.9822 15.0652 12.357 15.6904C11.7319 16.3155 10.8841 16.6667 10 16.6667C9.11597 16.6667 8.26812 16.3155 7.643 15.6904C7.01788 15.0652 6.66669 14.2174 6.66669 13.3333V13.3333Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="main__stat-item">
+                        <div class="main__stat-title">24°</div>
+                        <div class="main__stat-text">TEMPERATURE</div>
+                    </div>
+                </div>
+                <div class="main__stat-km">
+                    <div class="main__stat-km-before">Km</div>
+                    <div class="main__stat-item">
+                        <div class="main__stat-title">873</div>
+                        <div class="main__stat-text">MILEAGE</div>
+                    </div>
+                </div>
+                <div class="main__stat-battery">
+                    <div class="battery__svg-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10.8333 8.33334H16.6666L9.16664 19.1667V11.6667H3.33331L10.8333 0.833336V8.33334Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="main__stat-item">
+                        <div class="main__stat-title">94%</div>
+                        <div class="main__stat-text">BATTERY</div>
+                    </div>
+                </div>
+            </div>
+            <button class="main__btn" style="position: relative;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="122" height="122" viewBox="0 0 122 122" fill="none" style="position: absolute;">
+                    <g filter="url(#filter0_d_122_51)">
+                      <circle cx="61" cy="61" r="44" stroke="#02DB8A" stroke-width="2" shape-rendering="crispEdges"></circle>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_122_51" x="0" y="0" width="122" height="122" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                        <feOffset></feOffset>
+                        <feGaussianBlur stdDeviation="8"></feGaussianBlur>
+                        <feComposite in2="hardAlpha" operator="out"></feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0.00784314 0 0 0 0 0.858824 0 0 0 0 0.541176 0 0 0 1 0"></feColorMatrix>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_122_51"></feBlend>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_122_51" result="shape"></feBlend>
+                      </filter>
+                    </defs>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70" fill="none" style="top: 26px;position: absolute;left: 26px;">
+                    <circle cx="35" cy="35" r="34" stroke="#099260" stroke-width="2"></circle>
+                </svg>
+                <div class="main__btn-word" style="top: 51px;position: absolute;left: 45px;">Start</div>
+            </button>
+            <svg class="small-circle" width="429" height="655" viewBox="0 0 429 655" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_122_49)">
+                <circle cx="380" cy="380" r="200" fill="#374A6D" fill-opacity="0.5"/>
+                </g>
+                <defs>
+                <filter id="filter0_f_122_49" x="0" y="0" width="760" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feGaussianBlur stdDeviation="90" result="effect1_foregroundBlur_122_49"/>
+                </filter>
+                </defs>
+            </svg>
+        </div>
+    </section>
+    <section class="more">
+        <div class="container">
+            <div class="more__img-wrapper">
+                <img src="images/more-img.png" alt="" class="more__main-img">
+                <div class="more__stat-wrapper">
+                    <div class="more__num">2.500+</div>
+                    <div class="more__stat-text">
+                        Supercharges placed<br> along popular routes
+                    </div>
+                </div>
+            </div>
+            <div class="more__text-wrapper">
+                <div class="more__text-title">
+                    Machines With<br>
+                    Future Technology
+                </div>
+                <div class="more__main-text">
+                    See the future with high-performance electric cars produced by renowned brands. They feature futuristic builds and designs with new and innovative platforms that last a long time.
+                </div>
+                <button class="more__btn">Know more</button>
+            </div>
+        </div>
+    </section>
+    <section class="pick">
+        <div class="container">
+            <div class="pick__title">
+                Choose Your Electric Car<br>
+                Of The Porsche Brand
+            </div>
+            <div class="pick__wrapper">
+                <div class="pick__item">
+                    <svg class="pick-shape" width="258" height="266" viewBox="0 0 258 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_f_122_106)">
+                        <circle cx="51" cy="51" r="95" fill="#374A6D" fill-opacity="0.5"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_f_122_106" x="-164" y="-164" width="430" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_122_106"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                    <div class="pick__firm">Porsche</div>
+                    <div class="pick__title">Turbo S</div>
+                    <img src="images/pick-1.png" alt="" class="pick__car-img">
+                    <div class="pick__stat-top">
+                        <div class="pick__stat-timer">
+                            <svg class="clock" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M8.50001 1.33337C12.182 1.33337 15.1667 4.31804 15.1667 8.00004C15.1667 11.682 12.182 14.6667 8.50001 14.6667C4.81801 14.6667 1.83334 11.682 1.83334 8.00004C1.83334 4.31804 4.81801 1.33337 8.50001 1.33337ZM8.50001 2.66671C7.08552 2.66671 5.72897 3.22861 4.72877 4.2288C3.72858 5.229 3.16668 6.58555 3.16668 8.00004C3.16668 9.41453 3.72858 10.7711 4.72877 11.7713C5.72897 12.7715 7.08552 13.3334 8.50001 13.3334C9.9145 13.3334 11.2711 12.7715 12.2712 11.7713C13.2714 10.7711 13.8333 9.41453 13.8333 8.00004C13.8333 6.58555 13.2714 5.229 12.2712 4.2288C11.2711 3.22861 9.9145 2.66671 8.50001 2.66671ZM11.0553 4.89137C11.1318 4.83774 11.2248 4.81281 11.3178 4.82098C11.4109 4.82915 11.4981 4.86989 11.564 4.93604C11.6298 5.00187 11.6702 5.0889 11.6779 5.18168C11.6856 5.27445 11.6601 5.36694 11.606 5.44271C10.1527 7.47337 9.35268 8.56137 9.20734 8.70737C9.01962 8.89472 8.76523 8.99994 8.50001 8.99994C8.23479 8.99994 7.9804 8.89472 7.79268 8.70737C7.60533 8.51965 7.50011 8.26526 7.50011 8.00004C7.50011 7.73482 7.60533 7.48044 7.79268 7.29271C8.04201 7.04404 9.12934 6.24337 11.0553 4.89137ZM12.1667 7.33337C12.3435 7.33337 12.5131 7.40361 12.6381 7.52864C12.7631 7.65366 12.8333 7.82323 12.8333 8.00004C12.8333 8.17685 12.7631 8.34642 12.6381 8.47145C12.5131 8.59647 12.3435 8.66671 12.1667 8.66671C11.9899 8.66671 11.8203 8.59647 11.6953 8.47145C11.5702 8.34642 11.5 8.17685 11.5 8.00004C11.5 7.82323 11.5702 7.65366 11.6953 7.52864C11.8203 7.40361 11.9899 7.33337 12.1667 7.33337ZM4.83334 7.33337C5.01015 7.33337 5.17972 7.40361 5.30475 7.52864C5.42977 7.65366 5.50001 7.82323 5.50001 8.00004C5.50001 8.17685 5.42977 8.34642 5.30475 8.47145C5.17972 8.59647 5.01015 8.66671 4.83334 8.66671C4.65653 8.66671 4.48696 8.59647 4.36194 8.47145C4.23691 8.34642 4.16668 8.17685 4.16668 8.00004C4.16668 7.82323 4.23691 7.65366 4.36194 7.52864C4.48696 7.40361 4.65653 7.33337 4.83334 7.33337ZM6.37868 4.93604C6.50368 5.06122 6.57384 5.23094 6.57371 5.40785C6.57359 5.58475 6.50319 5.75437 6.37801 5.87937C6.25283 6.00438 6.08312 6.07454 5.90621 6.07441C5.7293 6.07429 5.55968 6.00389 5.43468 5.87871C5.37278 5.81672 5.3237 5.74316 5.29023 5.6622C5.25677 5.58125 5.23958 5.4945 5.23964 5.4069C5.2397 5.31931 5.25702 5.23258 5.2906 5.15167C5.32417 5.07077 5.37336 4.99727 5.43534 4.93537C5.56053 4.81037 5.73024 4.74021 5.90715 4.74034C5.99475 4.7404 6.08147 4.75771 6.16238 4.79129C6.24328 4.82487 6.31678 4.87406 6.37868 4.93604ZM8.50001 3.66671C8.67682 3.66671 8.84639 3.73695 8.97141 3.86197C9.09644 3.98699 9.16668 4.15656 9.16668 4.33337C9.16668 4.51019 9.09644 4.67975 8.97141 4.80478C8.84639 4.9298 8.67682 5.00004 8.50001 5.00004C8.3232 5.00004 8.15363 4.9298 8.02861 4.80478C7.90358 4.67975 7.83334 4.51019 7.83334 4.33337C7.83334 4.15656 7.90358 3.98699 8.02861 3.86197C8.15363 3.73695 8.3232 3.66671 8.50001 3.66671Z" fill="white"/>
+                            </svg>
+                            <div class="pick__stat-timer-text">3.7 Sec</div>
+                        </div>
+                        <div class="pick__stat-speed">
+                            <svg class="speed" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M3.16668 3.33333V12.6667H13.8333V3.33333H3.16668ZM2.50001 2H14.5C14.6768 2 14.8464 2.07024 14.9714 2.19526C15.0964 2.32029 15.1667 2.48986 15.1667 2.66667V13.3333C15.1667 13.5101 15.0964 13.6797 14.9714 13.8047C14.8464 13.9298 14.6768 14 14.5 14H2.50001C2.3232 14 2.15363 13.9298 2.02861 13.8047C1.90358 13.6797 1.83334 13.5101 1.83334 13.3333V2.66667C1.83334 2.48986 1.90358 2.32029 2.02861 2.19526C2.15363 2.07024 2.3232 2 2.50001 2ZM10.362 6.52867L9.16668 5.33333H12.5V8.66667L11.3047 7.47133L8.72868 10.0473L7.31468 8.63333L5.42868 10.5187L4.48601 9.576L7.31468 6.74733L8.72868 8.162L10.362 6.52867Z" fill="white"/>
+                            </svg>
+                            <div class="pick__stat-speed-text">356 Km/h</div>
+                        </div>
+                    </div>
+                    <div class="pick__stat-type">
+                        <svg class="fuel" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path d="M13.8333 7.33333H13.1667V4.66667H13.8333V2.66667H15.1667V4.66667H15.8333V7.33333H15.1667V12C15.1667 12.5304 14.956 13.0391 14.5809 13.4142C14.2058 13.7893 13.6971 14 13.1667 14C12.6362 14 12.1275 13.7893 11.7525 13.4142C11.3774 13.0391 11.1667 12.5304 11.1667 12V9.33333H9.83334V12.6667H10.5V14H1.83334V12.6667H2.50001V2.66667C2.50001 2.48986 2.57025 2.32029 2.69527 2.19526C2.8203 2.07024 2.98987 2 3.16668 2H9.16668C9.34349 2 9.51306 2.07024 9.63808 2.19526C9.76311 2.32029 9.83334 2.48986 9.83334 2.66667V8H11.1667C11.5203 8 11.8594 8.14048 12.1095 8.39052C12.3595 8.64057 12.5 8.97971 12.5 9.33333V12C12.5 12.1768 12.5702 12.3464 12.6953 12.4714C12.8203 12.5964 12.9899 12.6667 13.1667 12.6667C13.3435 12.6667 13.5131 12.5964 13.6381 12.4714C13.7631 12.3464 13.8333 12.1768 13.8333 12V7.33333ZM8.50001 12.6667V3.33333H3.83334V12.6667H8.50001ZM6.50001 7.33333H8.50001L5.83334 11.3333V8.66667H3.83334L6.50001 4.66667V7.33333Z" fill="white"/>
+                        </svg>
+                        <div class="pick__stat-type-text">Electric</div>
+                    </div>
+                    <div class="pick__stat-price">$175,900</div>
+                    <div class="pick__stat-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pick__item">
+                    <svg class="pick-shape" width="258" height="266" viewBox="0 0 258 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_f_122_106)">
+                        <circle cx="51" cy="51" r="95" fill="#374A6D" fill-opacity="0.5"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_f_122_106" x="-164" y="-164" width="430" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_122_106"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                    <div class="pick__firm">Porsche</div>
+                    <div class="pick__title">Taycan</div>
+                    <img src="images/pick-2.png" alt="" class="pick__car-img">
+                    <div class="pick__stat-top">
+                        <div class="pick__stat-timer">
+                            <svg class="clock" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M8.50001 1.33337C12.182 1.33337 15.1667 4.31804 15.1667 8.00004C15.1667 11.682 12.182 14.6667 8.50001 14.6667C4.81801 14.6667 1.83334 11.682 1.83334 8.00004C1.83334 4.31804 4.81801 1.33337 8.50001 1.33337ZM8.50001 2.66671C7.08552 2.66671 5.72897 3.22861 4.72877 4.2288C3.72858 5.229 3.16668 6.58555 3.16668 8.00004C3.16668 9.41453 3.72858 10.7711 4.72877 11.7713C5.72897 12.7715 7.08552 13.3334 8.50001 13.3334C9.9145 13.3334 11.2711 12.7715 12.2712 11.7713C13.2714 10.7711 13.8333 9.41453 13.8333 8.00004C13.8333 6.58555 13.2714 5.229 12.2712 4.2288C11.2711 3.22861 9.9145 2.66671 8.50001 2.66671ZM11.0553 4.89137C11.1318 4.83774 11.2248 4.81281 11.3178 4.82098C11.4109 4.82915 11.4981 4.86989 11.564 4.93604C11.6298 5.00187 11.6702 5.0889 11.6779 5.18168C11.6856 5.27445 11.6601 5.36694 11.606 5.44271C10.1527 7.47337 9.35268 8.56137 9.20734 8.70737C9.01962 8.89472 8.76523 8.99994 8.50001 8.99994C8.23479 8.99994 7.9804 8.89472 7.79268 8.70737C7.60533 8.51965 7.50011 8.26526 7.50011 8.00004C7.50011 7.73482 7.60533 7.48044 7.79268 7.29271C8.04201 7.04404 9.12934 6.24337 11.0553 4.89137ZM12.1667 7.33337C12.3435 7.33337 12.5131 7.40361 12.6381 7.52864C12.7631 7.65366 12.8333 7.82323 12.8333 8.00004C12.8333 8.17685 12.7631 8.34642 12.6381 8.47145C12.5131 8.59647 12.3435 8.66671 12.1667 8.66671C11.9899 8.66671 11.8203 8.59647 11.6953 8.47145C11.5702 8.34642 11.5 8.17685 11.5 8.00004C11.5 7.82323 11.5702 7.65366 11.6953 7.52864C11.8203 7.40361 11.9899 7.33337 12.1667 7.33337ZM4.83334 7.33337C5.01015 7.33337 5.17972 7.40361 5.30475 7.52864C5.42977 7.65366 5.50001 7.82323 5.50001 8.00004C5.50001 8.17685 5.42977 8.34642 5.30475 8.47145C5.17972 8.59647 5.01015 8.66671 4.83334 8.66671C4.65653 8.66671 4.48696 8.59647 4.36194 8.47145C4.23691 8.34642 4.16668 8.17685 4.16668 8.00004C4.16668 7.82323 4.23691 7.65366 4.36194 7.52864C4.48696 7.40361 4.65653 7.33337 4.83334 7.33337ZM6.37868 4.93604C6.50368 5.06122 6.57384 5.23094 6.57371 5.40785C6.57359 5.58475 6.50319 5.75437 6.37801 5.87937C6.25283 6.00438 6.08312 6.07454 5.90621 6.07441C5.7293 6.07429 5.55968 6.00389 5.43468 5.87871C5.37278 5.81672 5.3237 5.74316 5.29023 5.6622C5.25677 5.58125 5.23958 5.4945 5.23964 5.4069C5.2397 5.31931 5.25702 5.23258 5.2906 5.15167C5.32417 5.07077 5.37336 4.99727 5.43534 4.93537C5.56053 4.81037 5.73024 4.74021 5.90715 4.74034C5.99475 4.7404 6.08147 4.75771 6.16238 4.79129C6.24328 4.82487 6.31678 4.87406 6.37868 4.93604ZM8.50001 3.66671C8.67682 3.66671 8.84639 3.73695 8.97141 3.86197C9.09644 3.98699 9.16668 4.15656 9.16668 4.33337C9.16668 4.51019 9.09644 4.67975 8.97141 4.80478C8.84639 4.9298 8.67682 5.00004 8.50001 5.00004C8.3232 5.00004 8.15363 4.9298 8.02861 4.80478C7.90358 4.67975 7.83334 4.51019 7.83334 4.33337C7.83334 4.15656 7.90358 3.98699 8.02861 3.86197C8.15363 3.73695 8.3232 3.66671 8.50001 3.66671Z" fill="white"/>
+                            </svg>
+                            <div class="pick__stat-timer-text">3.7 Sec</div>
+                        </div>
+                        <div class="pick__stat-speed">
+                            <svg class="speed" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M3.16668 3.33333V12.6667H13.8333V3.33333H3.16668ZM2.50001 2H14.5C14.6768 2 14.8464 2.07024 14.9714 2.19526C15.0964 2.32029 15.1667 2.48986 15.1667 2.66667V13.3333C15.1667 13.5101 15.0964 13.6797 14.9714 13.8047C14.8464 13.9298 14.6768 14 14.5 14H2.50001C2.3232 14 2.15363 13.9298 2.02861 13.8047C1.90358 13.6797 1.83334 13.5101 1.83334 13.3333V2.66667C1.83334 2.48986 1.90358 2.32029 2.02861 2.19526C2.15363 2.07024 2.3232 2 2.50001 2ZM10.362 6.52867L9.16668 5.33333H12.5V8.66667L11.3047 7.47133L8.72868 10.0473L7.31468 8.63333L5.42868 10.5187L4.48601 9.576L7.31468 6.74733L8.72868 8.162L10.362 6.52867Z" fill="white"/>
+                            </svg>
+                            <div class="pick__stat-speed-text">356 Km/h</div>
+                        </div>
+                    </div>
+                    <div class="pick__stat-type">
+                        <svg class="fuel" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path d="M13.8333 7.33333H13.1667V4.66667H13.8333V2.66667H15.1667V4.66667H15.8333V7.33333H15.1667V12C15.1667 12.5304 14.956 13.0391 14.5809 13.4142C14.2058 13.7893 13.6971 14 13.1667 14C12.6362 14 12.1275 13.7893 11.7525 13.4142C11.3774 13.0391 11.1667 12.5304 11.1667 12V9.33333H9.83334V12.6667H10.5V14H1.83334V12.6667H2.50001V2.66667C2.50001 2.48986 2.57025 2.32029 2.69527 2.19526C2.8203 2.07024 2.98987 2 3.16668 2H9.16668C9.34349 2 9.51306 2.07024 9.63808 2.19526C9.76311 2.32029 9.83334 2.48986 9.83334 2.66667V8H11.1667C11.5203 8 11.8594 8.14048 12.1095 8.39052C12.3595 8.64057 12.5 8.97971 12.5 9.33333V12C12.5 12.1768 12.5702 12.3464 12.6953 12.4714C12.8203 12.5964 12.9899 12.6667 13.1667 12.6667C13.3435 12.6667 13.5131 12.5964 13.6381 12.4714C13.7631 12.3464 13.8333 12.1768 13.8333 12V7.33333ZM8.50001 12.6667V3.33333H3.83334V12.6667H8.50001ZM6.50001 7.33333H8.50001L5.83334 11.3333V8.66667H3.83334L6.50001 4.66667V7.33333Z" fill="white"/>
+                        </svg>
+                        <div class="pick__stat-type-text">Electric</div>
+                    </div>
+                    <div class="pick__stat-price">$175,900</div>
+                    <div class="pick__stat-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="pick__item">
+                    <svg class="pick-shape" width="258" height="266" viewBox="0 0 258 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_f_122_106)">
+                        <circle cx="51" cy="51" r="95" fill="#374A6D" fill-opacity="0.5"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_f_122_106" x="-164" y="-164" width="430" height="430" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_122_106"/>
+                        </filter>
+                        </defs>
+                    </svg>
+                    <div class="pick__firm">Porsche</div>
+                    <div class="pick__title">Turbo S Cross</div>
+                    <img src="images/pick-3.png" alt="" class="pick__car-img">
+                    <div class="pick__stat-top">
+                        <div class="pick__stat-timer">
+                            <svg class="clock" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M8.50001 1.33337C12.182 1.33337 15.1667 4.31804 15.1667 8.00004C15.1667 11.682 12.182 14.6667 8.50001 14.6667C4.81801 14.6667 1.83334 11.682 1.83334 8.00004C1.83334 4.31804 4.81801 1.33337 8.50001 1.33337ZM8.50001 2.66671C7.08552 2.66671 5.72897 3.22861 4.72877 4.2288C3.72858 5.229 3.16668 6.58555 3.16668 8.00004C3.16668 9.41453 3.72858 10.7711 4.72877 11.7713C5.72897 12.7715 7.08552 13.3334 8.50001 13.3334C9.9145 13.3334 11.2711 12.7715 12.2712 11.7713C13.2714 10.7711 13.8333 9.41453 13.8333 8.00004C13.8333 6.58555 13.2714 5.229 12.2712 4.2288C11.2711 3.22861 9.9145 2.66671 8.50001 2.66671ZM11.0553 4.89137C11.1318 4.83774 11.2248 4.81281 11.3178 4.82098C11.4109 4.82915 11.4981 4.86989 11.564 4.93604C11.6298 5.00187 11.6702 5.0889 11.6779 5.18168C11.6856 5.27445 11.6601 5.36694 11.606 5.44271C10.1527 7.47337 9.35268 8.56137 9.20734 8.70737C9.01962 8.89472 8.76523 8.99994 8.50001 8.99994C8.23479 8.99994 7.9804 8.89472 7.79268 8.70737C7.60533 8.51965 7.50011 8.26526 7.50011 8.00004C7.50011 7.73482 7.60533 7.48044 7.79268 7.29271C8.04201 7.04404 9.12934 6.24337 11.0553 4.89137ZM12.1667 7.33337C12.3435 7.33337 12.5131 7.40361 12.6381 7.52864C12.7631 7.65366 12.8333 7.82323 12.8333 8.00004C12.8333 8.17685 12.7631 8.34642 12.6381 8.47145C12.5131 8.59647 12.3435 8.66671 12.1667 8.66671C11.9899 8.66671 11.8203 8.59647 11.6953 8.47145C11.5702 8.34642 11.5 8.17685 11.5 8.00004C11.5 7.82323 11.5702 7.65366 11.6953 7.52864C11.8203 7.40361 11.9899 7.33337 12.1667 7.33337ZM4.83334 7.33337C5.01015 7.33337 5.17972 7.40361 5.30475 7.52864C5.42977 7.65366 5.50001 7.82323 5.50001 8.00004C5.50001 8.17685 5.42977 8.34642 5.30475 8.47145C5.17972 8.59647 5.01015 8.66671 4.83334 8.66671C4.65653 8.66671 4.48696 8.59647 4.36194 8.47145C4.23691 8.34642 4.16668 8.17685 4.16668 8.00004C4.16668 7.82323 4.23691 7.65366 4.36194 7.52864C4.48696 7.40361 4.65653 7.33337 4.83334 7.33337ZM6.37868 4.93604C6.50368 5.06122 6.57384 5.23094 6.57371 5.40785C6.57359 5.58475 6.50319 5.75437 6.37801 5.87937C6.25283 6.00438 6.08312 6.07454 5.90621 6.07441C5.7293 6.07429 5.55968 6.00389 5.43468 5.87871C5.37278 5.81672 5.3237 5.74316 5.29023 5.6622C5.25677 5.58125 5.23958 5.4945 5.23964 5.4069C5.2397 5.31931 5.25702 5.23258 5.2906 5.15167C5.32417 5.07077 5.37336 4.99727 5.43534 4.93537C5.56053 4.81037 5.73024 4.74021 5.90715 4.74034C5.99475 4.7404 6.08147 4.75771 6.16238 4.79129C6.24328 4.82487 6.31678 4.87406 6.37868 4.93604ZM8.50001 3.66671C8.67682 3.66671 8.84639 3.73695 8.97141 3.86197C9.09644 3.98699 9.16668 4.15656 9.16668 4.33337C9.16668 4.51019 9.09644 4.67975 8.97141 4.80478C8.84639 4.9298 8.67682 5.00004 8.50001 5.00004C8.3232 5.00004 8.15363 4.9298 8.02861 4.80478C7.90358 4.67975 7.83334 4.51019 7.83334 4.33337C7.83334 4.15656 7.90358 3.98699 8.02861 3.86197C8.15363 3.73695 8.3232 3.66671 8.50001 3.66671Z" fill="white"/>
+                            </svg>
+                            <div class="pick__stat-timer-text">3.7 Sec</div>
+                        </div>
+                        <div class="pick__stat-speed">
+                            <svg class="speed" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <path d="M3.16668 3.33333V12.6667H13.8333V3.33333H3.16668ZM2.50001 2H14.5C14.6768 2 14.8464 2.07024 14.9714 2.19526C15.0964 2.32029 15.1667 2.48986 15.1667 2.66667V13.3333C15.1667 13.5101 15.0964 13.6797 14.9714 13.8047C14.8464 13.9298 14.6768 14 14.5 14H2.50001C2.3232 14 2.15363 13.9298 2.02861 13.8047C1.90358 13.6797 1.83334 13.5101 1.83334 13.3333V2.66667C1.83334 2.48986 1.90358 2.32029 2.02861 2.19526C2.15363 2.07024 2.3232 2 2.50001 2ZM10.362 6.52867L9.16668 5.33333H12.5V8.66667L11.3047 7.47133L8.72868 10.0473L7.31468 8.63333L5.42868 10.5187L4.48601 9.576L7.31468 6.74733L8.72868 8.162L10.362 6.52867Z" fill="white"/>
+                            </svg>
+                            <div class="pick__stat-speed-text">356 Km/h</div>
+                        </div>
+                    </div>
+                    <div class="pick__stat-type">
+                        <svg class="fuel" xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <path d="M13.8333 7.33333H13.1667V4.66667H13.8333V2.66667H15.1667V4.66667H15.8333V7.33333H15.1667V12C15.1667 12.5304 14.956 13.0391 14.5809 13.4142C14.2058 13.7893 13.6971 14 13.1667 14C12.6362 14 12.1275 13.7893 11.7525 13.4142C11.3774 13.0391 11.1667 12.5304 11.1667 12V9.33333H9.83334V12.6667H10.5V14H1.83334V12.6667H2.50001V2.66667C2.50001 2.48986 2.57025 2.32029 2.69527 2.19526C2.8203 2.07024 2.98987 2 3.16668 2H9.16668C9.34349 2 9.51306 2.07024 9.63808 2.19526C9.76311 2.32029 9.83334 2.48986 9.83334 2.66667V8H11.1667C11.5203 8 11.8594 8.14048 12.1095 8.39052C12.3595 8.64057 12.5 8.97971 12.5 9.33333V12C12.5 12.1768 12.5702 12.3464 12.6953 12.4714C12.8203 12.5964 12.9899 12.6667 13.1667 12.6667C13.3435 12.6667 13.5131 12.5964 13.6381 12.4714C13.7631 12.3464 13.8333 12.1768 13.8333 12V7.33333ZM8.50001 12.6667V3.33333H3.83334V12.6667H8.50001ZM6.50001 7.33333H8.50001L5.83334 11.3333V8.66667H3.83334L6.50001 4.66667V7.33333Z" fill="white"/>
+                        </svg>
+                        <div class="pick__stat-type-text">Electric</div>
+                    </div>
+                    <div class="pick__stat-price">$175,900</div>
+                    <div class="pick__stat-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="pick__btns-wrapper">
+                <!--  -->
+            </div>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="feature__title">More Features</div>
+        <div class="feature__wrapper">
+            <img src="images/featured-car.png" alt="" class="feature__img">
+            <div class="feature__item feature__item-1">
+                <div class="feature__item-title">800v</div>
+                <div class="feature__item-text">
+                    Turbo<br>
+                    Chargin
+                </div>
+            </div>
+            <div class="feature__item feature__item-2">
+                <div class="feature__item-title">350</div>
+                <div class="feature__item-text">
+                    Km<br>
+                    Range
+                </div>
+            </div>
+            <div class="feature__item feature__item-3">
+                <div class="feature__item-title">480</div>
+                <div class="feature__item-text">
+                    Km<br>
+                    Travel
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="all">
+        <div class="container">
+            <div class="all__title">Featured Luxury Cars</div>
+            <div class="all__icons">
+                <button class="all__all">All</button>
+                <button class="all__tesla"><img src="images/tesla.png" alt=""></button>
+                <button class="all__audi"><img src="images/audi.png" alt=""></button>
+                <button class="all__porche"><img src="images/porche.png" alt=""></button>
+            </div>
+            <div class="all__cars-wrapper">
+                <div class="all__cars-item item-tesla">
+                    <img src="images/cars-shape.png" alt="" class="cars-shape">
+                    <div class="all__cars-firm">Tesla</div>
+                    <div class="all__cars-model">Model X</div>
+                    <img src="images/cars-tesla-1.png" alt="" class="all__cars-img">
+                    <div class="all__cars-price">$98,900</div>
+                    <div class="all__cars-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="all__cars-item item-tesla">
+                    <img src="images/cars-shape.png" alt="" class="cars-shape">
+                    <div class="all__cars-firm">Tesla</div>
+                    <div class="all__cars-model">Model 3</div>
+                    <img src="images/cars-tesla-2.png" alt="" class="all__cars-img">
+                    <div class="all__cars-price">$45,900</div>
+                    <div class="all__cars-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="all__cars-item item-audi">
+                    <img src="images/cars-shape.png" alt="" class="cars-shape">
+                    <div class="all__cars-firm">Audi</div>
+                    <div class="all__cars-model">E-tron</div>
+                    <img src="images/cars-audi.png" alt="" class="all__cars-img">
+                    <div class="all__cars-price">$175, 900</div>
+                    <div class="all__cars-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="all__cars-item item-porsche">
+                    <img src="images/cars-shape.png" alt="" class="cars-shape">
+                    <div class="all__cars-firm">Porsche</div>
+                    <div class="all__cars-model">Boxster 987</div>
+                    <img src="images/cars-porche-1.png" alt="" class="all__cars-img">
+                    <div class="all__cars-price">$126,900</div>
+                    <div class="all__cars-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="all__cars-item item-porsche">
+                    <img src="images/cars-shape.png" alt="" class="cars-shape">
+                    <div class="all__cars-firm">Porsche</div>
+                    <div class="all__cars-model">Panamera</div>
+                    <img src="images/cars-porche-2.png" alt="" class="all__cars-img">
+                    <div class="all__cars-price">$126,900</div>
+                    <div class="all__cars-cart">
+                        <svg class="cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 22H4C3.73478 22 3.48043 21.8946 3.29289 21.7071C3.10536 21.5196 3 21.2652 3 21V3C3 2.73478 3.10536 2.48043 3.29289 2.29289C3.48043 2.10536 3.73478 2 4 2H20C20.2652 2 20.5196 2.10536 20.7071 2.29289C20.8946 2.48043 21 2.73478 21 3V21C21 21.2652 20.8946 21.5196 20.7071 21.7071C20.5196 21.8946 20.2652 22 20 22ZM19 20V4H5V20H19ZM9 6V8C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8V6H17V8C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8V6H9Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="sub">
+        <div class="container">
+            <div class="sub__text-wrapper">
+                <div class="sub__text-wrapper-title">
+                    Do You Want To Receive<br>
+                    Special Offers?
+                </div>
+                <div class="sub__main-text">
+                    Be the first to receive all the information about our products and new cars by email by subscribing to our mailing list.
+                </div>
+                <button class="sub__btn">Subscribe Now</button>
+            </div>
+            <img src="images/subscribe-car.png" alt="" class="sub__img">
+        </div>
+    </section>
+    <section class="logos">
+        <div class="container">
+            <div class="logos__wrapper">
+                <div class="logo__wrapper-top">
+                    <img src="images/logos-porche.png" alt="" class="logos__logo">
+                    <img src="images/logos-audi.png" alt="" class="logos__logo">
+                    <img src="images/logos-tesla.png" alt="" class="logos__logo">
+                </div>
+                <div class="logo__wrapper-bottom">
+                    <img src="images/logos-bmw.png" alt="" class="logos__logo">
+                    <img src="images/logos-lambo.png" alt="" class="logos__logo">
+                    <img src="images/logos-mits.png" alt="" class="logos__logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <img src="images/footer-left-shape.png" alt="" class="footer__shape-left">
+            <img src="images/footer-right-shape.png" alt="" class="footer__shape-right">
+            <div class="footer-box">
+                <div class="footer__about">
+                    <div class="footer__about-logo-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M29.0667 18.6681C28.5144 21.365 27.1417 23.8251 25.1366 25.7113C23.1316 27.5975 20.5922 28.8175 17.8667 29.2041V26.5041C19.8797 26.1451 21.7474 25.2157 23.2478 23.8264C24.7482 22.4371 25.8182 20.6463 26.3307 18.6667L29.0667 18.6681ZM5.66933 18.6681C6.17628 20.6248 7.22809 22.3974 8.70252 23.78C10.177 25.1626 12.0135 26.0985 13.9987 26.4787V29.1854C11.2999 28.7742 8.7921 27.5453 6.81349 25.6645C4.83488 23.7836 3.48062 21.3413 2.93333 18.6667H5.66933V18.6681ZM24 14.6667V17.3334H22.6667C21.2983 17.3334 19.9824 17.8593 18.9909 18.8024C17.9995 19.7454 17.4084 21.0335 17.34 22.4001L17.3333 22.6667V24.0001H14.6667V22.6667C14.6667 21.2984 14.1407 19.9824 13.1977 18.991C12.2546 17.9996 10.9666 17.4085 9.59999 17.3401L9.33333 17.3334H7.99999V14.6667H24ZM16 2.66675C22.9133 2.66675 28.5987 7.92941 29.2667 14.6667H26.584C26.2586 12.0893 25.0039 9.71911 23.0552 8.00098C21.1066 6.28285 18.5979 5.33485 16 5.33485C13.4021 5.33485 10.8934 6.28285 8.94476 8.00098C6.9961 9.71911 5.74137 12.0893 5.41599 14.6667H2.73199C3.40133 7.92941 9.08666 2.66675 16 2.66675Z" fill="white"/>
+                        </svg>
+                        <div class="footer__about-logo-text">Elecar</div>
+                    </div>
+                    <div class="footer__about-text">
+                        We offer the best electric cars of<br> the most recognized brands in<br> the world.
+                    </div>
+                </div>
+                <div class="footer__main-wrapper">
+                    <div class="footer__main-title">Company</div>
+                    <div class="footer__main-links">
+                        <div class="footer__main-link">About</div>
+                        <div class="footer__main-link">Cars</div>
+                        <div class="footer__main-link">History</div>
+                        <div class="footer__main-link">Shop</div>
+                    </div>
+                </div>
+                <div class="footer__main-wrapper">
+                    <div class="footer__main-title">Information</div>
+                    <div class="footer__main-links">
+                        <div class="footer__main-link">Request a quote</div>
+                        <div class="footer__main-link">Find a dealer</div>
+                        <div class="footer__main-link">Contact us</div>
+                        <div class="footer__main-link">Services</div>
+                    </div>
+                </div>
+                <div class="footer__main-wrapper">
+                    <div class="footer__main-title">Follow us</div>
+                    <div class="footer__socials-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" fill="#BABEC4"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75ZM12 4C9.526 4 9.122 4.007 7.971 4.058C7.187 4.095 6.661 4.2 6.173 4.39C5.76462 4.53994 5.39541 4.78026 5.093 5.093C4.78001 5.3954 4.53935 5.76458 4.389 6.173C4.199 6.663 4.094 7.188 4.058 7.971C4.006 9.075 4 9.461 4 12C4 14.474 4.007 14.878 4.058 16.029C4.095 16.812 4.2 17.339 4.389 17.826C4.559 18.261 4.759 18.574 5.091 18.906C5.428 19.242 5.741 19.443 6.171 19.609C6.665 19.8 7.191 19.906 7.971 19.942C9.075 19.994 9.461 20 12 20C14.474 20 14.878 19.993 16.029 19.942C16.811 19.905 17.338 19.8 17.826 19.611C18.2338 19.4603 18.6027 19.2205 18.906 18.909C19.243 18.572 19.444 18.259 19.61 17.829C19.8 17.336 19.906 16.809 19.942 16.029C19.994 14.925 20 14.539 20 12C20 9.526 19.993 9.122 19.942 7.971C19.905 7.189 19.8 6.661 19.61 6.173C19.4593 5.765 19.2191 5.39596 18.907 5.093C18.6047 4.77985 18.2355 4.53917 17.827 4.389C17.337 4.199 16.811 4.094 16.029 4.058C14.925 4.006 14.539 4 12 4ZM12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2Z" fill="#BABEC4"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.3 5.55011C14.54 5.54999 13.8103 5.84824 13.2679 6.38068C12.7256 6.91313 12.4139 7.63721 12.4 8.39711L12.372 9.97211C12.3704 10.0567 12.3509 10.1399 12.3148 10.2164C12.2787 10.2929 12.2269 10.3609 12.1627 10.416C12.0985 10.471 12.0233 10.5119 11.9422 10.5359C11.8611 10.5599 11.7758 10.5664 11.692 10.5551L10.131 10.3431C8.07702 10.0631 6.10902 9.11711 4.22102 7.54411C3.62302 10.8541 4.79102 13.1471 7.60402 14.9161L9.35102 16.0141C9.43403 16.0663 9.50299 16.138 9.55187 16.223C9.60075 16.3079 9.62806 16.4036 9.63141 16.5016C9.63477 16.5996 9.61407 16.6969 9.57111 16.785C9.52816 16.8731 9.46426 16.9494 9.38502 17.0071L7.79302 18.1701C8.74002 18.2291 9.63902 18.1871 10.385 18.0391C15.103 17.0971 18.24 13.5471 18.24 7.69111C18.24 7.21311 17.228 5.55011 15.3 5.55011ZM10.4 8.36011C10.4175 7.39616 10.7189 6.45878 11.2666 5.66534C11.8142 4.87189 12.5838 4.25763 13.4789 3.89948C14.3741 3.54133 15.3549 3.45519 16.2988 3.65186C17.2426 3.84853 18.1074 4.31926 18.785 5.00511C19.496 5.00011 20.101 5.18011 21.454 4.36011C21.119 6.00011 20.954 6.71211 20.24 7.69111C20.24 15.3331 15.543 19.0491 10.777 20.0001C7.50902 20.6521 2.75702 19.5811 1.39502 18.1591C2.08902 18.1051 4.90902 17.8021 6.53902 16.6091C5.16002 15.7001 -0.32898 12.4701 3.27802 3.78611C4.97102 5.76311 6.68802 7.10911 8.42802 7.82311C9.58602 8.29811 9.87002 8.28811 10.401 8.36111L10.4 8.36011Z" fill="#BABEC4"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__rights">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M6 1C8.76 1 11 3.24 11 6C11 8.76 8.76 11 6 11C3.24 11 1 8.76 1 6C1 3.24 3.24 1 6 1ZM6 2C3.79 2 2 3.79 2 6C2 8.21 3.79 10 6 10C8.21 10 10 8.21 10 6C10 3.79 8.21 2 6 2ZM6 3.5C6.91 3.5 7.7065 3.9865 8.144 4.714L7.287 5.2285C7.15213 5.00362 6.96067 4.81803 6.7317 4.69022C6.50273 4.56242 6.24426 4.49687 5.98206 4.50011C5.71986 4.50336 5.46309 4.57528 5.23735 4.70871C5.01161 4.84214 4.8248 5.03241 4.69554 5.26056C4.56627 5.48871 4.49907 5.74675 4.50064 6.00897C4.50221 6.27119 4.57249 6.52841 4.70447 6.755C4.83646 6.98158 5.02553 7.16961 5.25285 7.30033C5.48017 7.43105 5.73778 7.49989 6 7.5C6.25907 7.50017 6.51376 7.43319 6.73923 7.30561C6.9647 7.17802 7.15325 6.99417 7.2865 6.772L8.144 7.286C7.86301 7.75531 7.43582 8.11949 6.92796 8.32267C6.4201 8.52586 5.85961 8.55684 5.33245 8.41086C4.80529 8.26488 4.34057 7.95001 4.00957 7.51452C3.67857 7.07904 3.49956 6.547 3.5 6C3.5 4.62 4.62 3.5 6 3.5Z" fill="#888B91"/>
+                </svg>
+                <div class="footer__rights-text">Bedimcode. All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>
