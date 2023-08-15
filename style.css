@@ -4,3 +4,515 @@
     margin: 0;
     font-family: 'Exo', sans-serif;
 }
+
+.container {
+    width: min(1280px, 100%);
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+body {
+    background: #0A0A0B;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-block: 29px;
+    padding-inline: 120px;
+    justify-content: space-between;
+}
+
+.nav__logo-box {
+    display: flex;
+    gap: 3px;
+}
+
+.nav__logo-text {
+    color: var(--white-color, #FFF);
+    font-weight: 500;
+    line-height: 140%;
+    align-self: flex-end;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav__link {
+    color: #FFF;
+    font-weight: 500;
+    line-height: 140%;
+    cursor: pointer;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.nav__link:hover {
+    color: var(--first-color, #4177DC);
+    text-shadow: 0px 0px 32px #346DDA;
+}
+
+.menu {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width: 50em) {
+    nav {
+        padding-inline: 18px;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__links {
+        display: none;
+        position: relative;
+    }
+
+    .is-opened {
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(48px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .nav__link {
+        padding: 40px;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        right: 0.6rem;
+        top: 1.2rem;
+        cursor: pointer;
+    }
+}
+
+.main {
+    margin-top: 1rem;
+}
+
+.main .container {
+    padding-block: 60px
+}
+
+.big-circle {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 60%;
+}
+
+.small-circle {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 60%;
+}
+
+.main__title {
+    color: var(--white-color, #FFF);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.main__car-model {
+    color: var(--white-color, #FFF);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%; 
+}
+
+.main__electric-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.main__electric-text {
+    color: var(--text-color, #BABEC4);
+    line-height: 140%; 
+}
+
+.main__car-img {
+    margin-top: 2rem;
+    width: 35%;
+    display: block;
+    margin-inline: auto
+}
+
+.main__stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+
+.main__stat-title {
+    color: var(--white-color, #FFF);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%; 
+    text-align: center;
+}
+
+.main__stat-text {
+    color: var(--text-color-light, #888B91);
+    font-size: 13px;
+    line-height: 140%;
+    text-align: center; 
+}
+
+.main__stat-km-before {
+    color: var(--white-color, #FFF);
+    text-align: center;
+    font-size: 13px;
+}
+
+.main__stat-item {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.main__stat-temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__btn {
+    display: block;
+    margin-inline: auto;
+    margin-top: 3.2rem;
+    width: 90px;
+    height: 90px;
+    border: 5px #099260 solid;
+    cursor: pointer;
+    background: transparent;
+    color: var(--white-color, #FFF);
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%; 
+    transition: box-shadow 0.3s ease;
+
+}
+
+.main__btn:hover, .main__btn:active {
+    -webkit-box-shadow: 4px 4px 70px 4px rgba(9,146,96,1);
+    -moz-box-shadow: 4px 4px 70px 4px rgba(9,146,96,1);
+    box-shadow: 4px 4px 70px 4px rgba(9,146,96,1);
+}
+
+.more {
+    margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+    .main__title {
+        font-size: 24px;
+    }
+
+    .main__car-model {
+        font-size: 16px;
+    }
+
+    .main__stat-title {
+        font-size: 20px;
+    }
+
+    .main__stat-text {
+        font-size: 10px;
+    }
+
+    .main__stat {
+        gap: 3rem;
+    }
+
+    .main__car-img {
+        width: 60%;
+    }
+}
+
+.more {
+    padding-block: 2rem;
+}
+
+.more .container {
+    display: flex;
+    align-items: center;
+    padding-inline: 70px;
+    gap: 3rem;
+}
+
+.more__text-title {
+    color: var(--title-color, #F1F2F3);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%; 
+}
+
+.more__main-text {
+    color: var(--text-color, #BABEC4);
+    line-height: 140%; 
+    margin-top: 1rem;
+}
+
+.more__btn {
+    padding: 14px 32px;
+    border-radius: 4px;
+    background: var(--first-color, #4177DC);
+    color: var(--white-color, #FFF);
+    border: none;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 140%; 
+    margin-bottom: 30px;
+}
+
+.more__btn:hover, .more__btn:active {
+    -webkit-box-shadow: 1px -4px 26px 2px rgba(65,119,220,1);
+    -moz-box-shadow: 1px -4px 26px 2px rgba(65,119,220,1);
+    box-shadow: 1px -4px 26px 2px rgba(65,119,220,1);
+}
+
+.more__stat-wrapper {
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(8px);
+    display: inline-block;
+    padding: 17px;
+}
+
+.more__num {
+    color: var(--white-color, #FFF);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 140%; 
+}
+
+.more__stat-text {
+    margin-top: 0.6rem;
+    color: var(--white-color, #FFF);
+    text-align: center;
+    font-size: 13px;
+    line-height: 140%; 
+}
+
+.more__img-wrapper {
+    position: relative;
+}
+
+.more__stat-wrapper {
+    position: absolute;
+    right: 1px;
+    bottom: 0px
+}
+
+@media (max-width: 920px) {
+    .more .container {
+        flex-direction: column;
+        padding-inline: 20px;
+    }
+
+    .more__main-img {
+        width: 100%;
+    }
+}
+
+.pick {
+    margin-top: 3rem;
+}
+
+.pick__title-main {
+    color: var(--title-color, #F1F2F3);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    text-align: center; 
+}
+
+.pick__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.pick__item {
+    border-radius: 20px;
+    background: var(--container-color, #111213);
+    padding-top: 40px;
+}
+
+.pick__firm {
+    color: var(--title-color, #F1F2F3);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%;
+    padding-left: 35px;
+}
+
+.pick__title {
+    color: var(--text-color, #BABEC4);
+    line-height: 140%; 
+    margin-top: 0.7rem;
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+.pick__car-img {
+    margin-top: 1.2rem;
+    padding-inline: 50px;
+}
+
+.pick__stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+    margin-top: 1.5rem;
+}
+
+.pick__stat-timer {
+    display: flex;
+    align-items:center;
+    gap: 3px;
+}
+
+.pick__stat-timer-text, .pick__stat-speed-text, .pick__stat-type-text {
+    color: var(--white-color, #FFF);
+    font-size: 13px;
+    line-height: 140%; 
+}
+
+.pick__stat-speed {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.pick__stat-type {
+    display: flex;
+    align-items: center;
+    padding-inline: 30px;
+    margin-top: 1.2rem;
+    gap: 3px;
+}
+
+.pick__stat-price {
+    color: var(--white-color, #FFF);
+    margin-top: 1.5rem;
+    padding-inline: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.pick__stat-cart {
+    padding: 12px 16px;
+    border-radius: 20px 0px;
+    background: var(--first-color, #4177DC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80%;
+    cursor: pointer;
+    z-index: -10;
+}
+
+.pick__stat-cart:hover, .pick__stat-cart:active {
+    -webkit-box-shadow: 1px -4px 26px 2px rgba(65,119,220,1);
+    -moz-box-shadow: 1px -4px 26px 2px rgba(65,119,220,1);
+    box-shadow: 1px -4px 26px 2px rgba(65,119,220,1);
+}
+
+@media (max-width:990px) {
+    .pick__wrapper {
+        flex-direction: column;
+    }
+}
+
+.all {
+    margin-top: 4rem;
+}
+
+.all__title {
+    color: var(--title-color, #F1F2F3);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 140%; 
+}
+
+.all__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.7rem;
+    gap: 2rem;
+}
+
+.all__all {
+    border-radius: 16px;
+    background: var(--first-color, #4177DC);
+    width: 52px;
+    height: 52px;
+    border:none;
+    cursor: pointer;
+    color: var(--title-color, #F1F2F3);
+    line-height: 140%;
+}
+
+.all__tesla, .all__audi, .all__porche {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: var(--container-color, #111213);
+    width: 52px;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+}
+.all__tesla:hover, .all__audi:hover, .all__porche:hover, .all__tesla:active, .all__audi:active, .all__porche:active {
+    -webkit-box-shadow: 0px 0px 26px 2px rgba(65,119,220,1);
+    -moz-box-shadow: 0px 0px 26px 2px rgba(65,119,220,1);
+    box-shadow: 0px 0px 26px 2px rgba(65,119,220,1);
+}
+
+.all__cars-wrapper {
+    display: flex;
+    flex: wrap;
+}
