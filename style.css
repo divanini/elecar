@@ -789,8 +789,3 @@ footer {
         gap: 2rem;
     }
 }
-
-/* animation */
-.more, .pick, .all, .sub, .logos, footer {
-    display: none
-}

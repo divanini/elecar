@@ -41,10 +41,6 @@ const elements = document.querySelectorAll('.more, .pick, .all, .sub, .logos, fo
 const moreElement = document.querySelector('.more');
 
 scrollButton.addEventListener('click', function() {
-  elements.forEach(element => {
-    element.style.display = "block";
-  });
-
   moreElement.scrollIntoView({
     behavior: 'smooth'
   });
