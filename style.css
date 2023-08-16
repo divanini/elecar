@@ -108,7 +108,7 @@ nav {
 }
 
 .main {
-    margin-top: -1rem;
+    margin-top: 3rem;
 }
 
 .main .container {
@@ -126,7 +126,7 @@ nav {
 .main__car-model {
     color: var(--white-color, #FFF);
     text-align: center;
-    margin-top: 0.6rem;
+    margin-top: 1rem;
     font-size: 24px;
     font-weight: 600;
     line-height: 140%; 
@@ -136,7 +136,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 5px;
-    margin-top: 0.6rem;
+    margin-top: 1rem;
     justify-content: center;
 }
 
@@ -157,7 +157,7 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 6rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .main__stat-title {
@@ -198,7 +198,7 @@ nav {
 .main__btn {
     display: block;
     margin-inline: auto;
-    margin-top: 1.3rem;
+    margin-top: 3rem;
     width: 90px;
     height: 90px;
     border: 5px #099260 solid;
